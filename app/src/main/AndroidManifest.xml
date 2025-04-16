@@ -3,13 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
 
-    <uses-feature
-        android:name="android.hardware.touchscreen"
-        android:required="false" />
-    <uses-feature
-        android:name="android.software.leanback"
-        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -22,41 +18,12 @@
         android:theme="@style/Theme.LAB2"
         tools:targetApi="31">
         <activity
-            android:name=".last"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="true"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_last"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".DetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PlaybackActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BrowseErrorActivity"
-            android:exported="false" />
-        <activity
             android:name=".afish"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_afish"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".acow"
@@ -64,13 +31,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_acow"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".alion"
@@ -78,47 +39,15 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_alion"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
-        <activity
-            android:name=".DetailsActivity3"
-            android:exported="false" />
         <activity
             android:name=".fpeach"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fpeach"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".DetailsActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".cbrown"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="true"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_cbrown"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".cgreen"
@@ -126,13 +55,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cgreen"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".cred"
@@ -140,13 +63,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cred"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".cpink"
@@ -154,13 +71,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cpink"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".cblue"
@@ -168,27 +79,20 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cblue"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
-            android:name=".StartActivity"
+            android:name=".START"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_start"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
+            android:logo="@drawable/app_icon_your_company">
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+        </intent-filter>
         </activity>
         <activity
             android:name=".nfive"
@@ -196,27 +100,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_nfive"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".NFIVE"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="true"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_nfive"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".nfour"
@@ -224,13 +108,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_nfour"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".nthree"
@@ -238,13 +116,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_nthree"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".ntwo"
@@ -252,13 +124,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_ntwo"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".none"
@@ -266,13 +132,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_none"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".fmelon"
@@ -280,13 +140,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fmelon"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".fmango"
@@ -294,41 +148,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fmango"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".peach"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="true"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_peach"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Fgrapes"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="true"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_fgrapes"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".fapple"
@@ -336,13 +156,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fapple"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".fkiwi"
@@ -350,13 +164,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fkiwi"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".abird"
@@ -364,13 +172,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_abird"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".adog"
@@ -378,27 +180,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_adog"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".AcowActivity"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="true"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_acow"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
         <activity
             android:name=".CategActivity"
@@ -406,25 +188,7 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_categ"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".START"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:logo="@drawable/app_icon_your_company">
         </activity>
 
         <meta-data
