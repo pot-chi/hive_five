@@ -11,7 +11,7 @@
     tools:ignore="MergeRootFrame" >
 
     <ImageView
-        android:id="@+id/w"
+        android:id="@+id/b1"
         android:layout_width="255dp"
         android:layout_height="594dp"
         android:src="@drawable/panel"
@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/D"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"
@@ -92,7 +92,7 @@
         tools:layout_editor_absoluteY="326dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/B"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"
@@ -109,7 +109,7 @@
         tools:layout_editor_absoluteY="326dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/I"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"
@@ -126,7 +126,7 @@
         tools:layout_editor_absoluteY="326dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/R"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"
