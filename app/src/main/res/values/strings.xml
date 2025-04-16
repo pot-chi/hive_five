@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">LAB 2</string>
+    <string name="title_activity_categ">Leanback CategActivity</string>
+    <string name="browse_title">Videos by Your Company</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="title_activity_acow">Leanback AcowActivity</string>
+    <string name="title_activity_adog">Leanback adog</string>
+    <string name="title_activity_afish">Leanback afish</string>
+    <string name="title_activity_alion">Leanback alion</string>
+    <string name="title_activity_abird">Leanback abird</string>
+    <string name="title_activity_fkiwi">Leanback fkiwi</string>
+    <string name="title_activity_fapple">Leanback fapple</string>
+    <string name="title_activity_fgrapes">Leanback Fgrapes</string>
+    <string name="title_activity_peach">Leanback peach</string>
+    <string name="title_activity_fmango">Leanback fmango</string>
+    <string name="title_activity_fmelon">Leanback fmelon</string>
+    <string name="title_activity_none">Leanback none</string>
+    <string name="title_activity_ntwo">Leanback ntwo</string>
+    <string name="title_activity_nthree">Leanback nthree</string>
+    <string name="title_activity_nfour">Leanback nfour</string>
+    <string name="title_activity_nfive">Leanback NFIVE</string>
+    <string name="title_activity_cblue">Leanback cblue</string>
+    <string name="title_activity_cpink">Leanback cpink</string>
+    <string name="title_activity_start">Leanback StartActivity</string>
+    <string name="title_activity_cred">Leanback cred</string>
+    <string name="title_activity_cgreen">Leanback cgreen</string>
+    <string name="title_activity_cbrown">Leanback cbrown</string>
+    <string name="title_activity_fpeach">Leanback fpeach</string>
+    <string name="title_activity_last">Leanback last</string>
+</resources>

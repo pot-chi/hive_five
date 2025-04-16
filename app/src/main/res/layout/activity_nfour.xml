@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/four"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nfour"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/w23"
+        android:layout_width="255dp"
+        android:layout_height="594dp"
+        android:src="@drawable/panel"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <ImageView
+        android:id="@+id/c9"
+        android:layout_width="255dp"
+        android:layout_height="594dp"
+        android:src="@drawable/panel"
+        tools:layout_editor_absoluteX="-50dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <ImageView
+        android:id="@+id/o10"
+        android:layout_width="255dp"
+        android:layout_height="594dp"
+        android:src="@drawable/panel"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <ImageView
+        android:id="@+id/w24"
+        android:layout_width="255dp"
+        android:layout_height="594dp"
+        android:src="@drawable/panel"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <Button
+        android:id="@+id/rbackbttn3"
+        android:layout_width="115dp"
+        android:layout_height="69dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <Button
+        android:id="@+id/enterbttn3"
+        android:layout_width="115dp"
+        android:layout_height="69dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="67dp"
+        android:layout_height="103dp"
+        android:height="300px"
+        android:background="#00E91E63"
+        android:fontFamily="@font/bagel_fat_one"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="O"
+        android:textColor="#64D4FB"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="67dp"
+        android:layout_height="103dp"
+        android:height="300px"
+        android:background="#00E91E63"
+        android:fontFamily="@font/bagel_fat_one"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="U"
+        android:textColor="#64D4FB"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="67dp"
+        android:layout_height="103dp"
+        android:height="300px"
+        android:background="#00E91E63"
+        android:fontFamily="@font/bagel_fat_one"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="F"
+        android:textColor="#64D4FB"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="67dp"
+        android:layout_height="103dp"
+        android:height="300px"
+        android:background="#00E91E63"
+        android:fontFamily="@font/bagel_fat_one"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="R"
+        android:textColor="#64D4FB"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <Button
+        android:id="@+id/backbttn4"
+        android:layout_width="87dp"
+        android:layout_height="84dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+</androidx.constraintlayout.widget.ConstraintLayout>

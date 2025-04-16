@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dog"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adog"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame" >
+
+<!--    panel-->
+    <ImageView
+        android:id="@+id/C"
+        android:layout_width="255dp"
+        android:layout_height="594dp"
+        android:src="@drawable/panel"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/o"
+        android:layout_width="255dp"
+        android:layout_height="594dp"
+        android:src="@drawable/panel"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/w"
+        android:layout_width="255dp"
+        android:layout_height="594dp"
+        android:src="@drawable/panel"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <!--    letter -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="67dp"
+        android:layout_height="103dp"
+        android:height="300px"
+        android:background="#00E91E63"
+        android:fontFamily="@font/bagel_fat_one"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="G"
+        android:textColor="#64D4FB"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="67dp"
+        android:layout_height="103dp"
+        android:height="300px"
+        android:background="#00E91E63"
+        android:fontFamily="@font/bagel_fat_one"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="0"
+        android:textColor="#64D4FB"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="67dp"
+        android:layout_height="103dp"
+        android:height="300px"
+        android:background="#00E91E63"
+        android:fontFamily="@font/bagel_fat_one"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="18"
+        android:text="D"
+        android:textColor="#64D4FB"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="311dp" />
+    <!--    buttons-->
+    <Button
+        android:id="@+id/backbttn3"
+        android:layout_width="87dp"
+        android:layout_height="84dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <Button
+        android:id="@+id/rbackbttn"
+        android:layout_width="115dp"
+        android:layout_height="69dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+    <Button
+        android:id="@+id/enterbttn"
+        android:layout_width="115dp"
+        android:layout_height="69dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
