@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <TextView
-        android:id="@+id/R"
+        android:id="@+id/let_r"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"

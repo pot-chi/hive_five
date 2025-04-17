@@ -1,54 +1,70 @@
 package com.example.lab2;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.fragment.app.FragmentActivity;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 /*
- * Main Activity class that loads {@link MainFragment}.
- */
-public class abird extends FragmentActivity {
+     * Main Activity class that loads {@link MainFragment}.
+     */
+    public class abird extends FragmentActivity {
 
     TextView boxB, boxI, boxR, boxD;
-    ImageView imgB, imgI, imgR, imgD;
+    TextView letB, letI, letR, letD;
+    List<TextView> letterViews;
+    List<String> letterValues = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abird);
 
-        // Link the 4 letter boxes (TextViews)
-        boxB = findViewById(R.id.B);
-        boxI = findViewById(R.id.I);
-        boxR = findViewById(R.id.R);
-        boxD = findViewById(R.id.D);
+        boxB = findViewById(R.id.box_b);
+        boxI = findViewById(R.id.box_i);
+        boxR = findViewById(R.id.box_r);
+        boxD = findViewById(R.id.box_d);
 
-        // Link the letter buttons (ImageViews)
-        imgB = findViewById(R.id.b1);
-        imgI = findViewById(R.id.b2);
-        imgR = findViewById(R.id.b3);
-        imgD = findViewById(R.id.b4);
+        letB = findViewById(R.id.let_b);
+        letI = findViewById(R.id.let_i);
+        letR = findViewById(R.id.let_r);
+        letD = findViewById(R.id.let_d);
 
-        // When a letter is tapped, fill it in the next empty box
-        imgB.setOnClickListener(v -> fillNextEmptyBox("B"));
-        imgI.setOnClickListener(v -> fillNextEmptyBox("I"));
-        imgR.setOnClickListener(v -> fillNextEmptyBox("R"));
-        imgD.setOnClickListener(v -> fillNextEmptyBox("D"));
+        letterViews = new ArrayList<>();
+        letterViews.add(letB);
+        letterViews.add(letI);
+        letterViews.add(letR);
+        letterViews.add(letD);
 
-        // Submit button
+        letterValues.add("B");
+        letterValues.add("I");
+        letterValues.add("R");
+        letterValues.add("D");
+
+        for (TextView tv : letterViews) {
+            tv.setOnClickListener(v -> fillNextEmptyBox((TextView) v));
+        }
+
         findViewById(R.id.enterbttn).setOnClickListener(v -> {
             if (!isCorrectSpelling()) {
                 shakeBoxes();
-            } else {
-                // Optionally show success here!
             }
+            clearBoxes();//dito ata maglagay GOODJOB!
         });
+
+        findViewById(R.id.rbackbttn).setOnClickListener(v -> backspaceLastLetter());
+
+        shuffleLetters();
     }
 
-    private void fillNextEmptyBox(String letter) {
+    private void fillNextEmptyBox(TextView selectedLetter) {
+        String letter = selectedLetter.getText().toString();
+
         if (boxB.getText().toString().isEmpty()) {
             boxB.setText(letter);
         } else if (boxI.getText().toString().isEmpty()) {
@@ -57,25 +73,86 @@ public class abird extends FragmentActivity {
             boxR.setText(letter);
         } else if (boxD.getText().toString().isEmpty()) {
             boxD.setText(letter);
+        } else {
+            return;
+        }
+
+        selectedLetter.setVisibility(View.INVISIBLE);
+    }
+
+    private void backspaceLastLetter() {
+        if (!boxD.getText().toString().isEmpty()) {
+            restoreLetter(boxD.getText().toString());
+            boxD.setText("");
+        } else if (!boxR.getText().toString().isEmpty()) {
+            restoreLetter(boxR.getText().toString());
+            boxR.setText("");
+        } else if (!boxI.getText().toString().isEmpty()) {
+            restoreLetter(boxI.getText().toString());
+            boxI.setText("");
+        } else if (!boxB.getText().toString().isEmpty()) {
+            restoreLetter(boxB.getText().toString());
+            boxB.setText("");
+        }
+    }
+
+    private void restoreLetter(String letter) {
+        for (TextView tv : letterViews) {
+            if (tv.getText().toString().equalsIgnoreCase(letter) && tv.getVisibility() == View.INVISIBLE) {
+                tv.setVisibility(View.VISIBLE);
+                break;
+            }
         }
     }
 
     private boolean isCorrectSpelling() {
         String spelledWord =
                 boxB.getText().toString().trim() +
-                        boxI.getText().toString().trim() +
-                        boxR.getText().toString().trim() +
-                        boxD.getText().toString().trim();
+                boxI.getText().toString().trim() +
+                boxR.getText().toString().trim() +
+                boxD.getText().toString().trim();
 
         return spelledWord.equalsIgnoreCase("BIRD");
     }
 
     private void shakeBoxes() {
-        Animation shake = AnimationUtils.loadAnimation(getBaseContext(), R.anim.shake);
+        Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
 
-        if (boxB != null) boxB.startAnimation(shake);
-        if (boxI != null) boxI.startAnimation(shake);
-        if (boxR != null) boxR.startAnimation(shake);
-        if (boxD != null) boxD.startAnimation(shake);
+        findViewById(R.id.b1).startAnimation(shake);
+        boxB.startAnimation(shake);
+
+        findViewById(R.id.b2).startAnimation(shake);
+        boxI.startAnimation(shake);
+
+        findViewById(R.id.b3).startAnimation(shake);
+        boxR.startAnimation(shake);
+
+        findViewById(R.id.b4).startAnimation(shake);
+        boxD.startAnimation(shake);
     }
-}
+
+    private void clearBoxes() {
+        boxB.setText("");
+        boxI.setText("");
+        boxR.setText("");
+        boxD.setText("");
+
+        for (TextView tv : letterViews) {
+            tv.setVisibility(View.VISIBLE);
+        }
+
+        shuffleLetters();
+    }
+
+    private void shuffleLetters() {
+        Collections.shuffle(letterValues);
+
+        for (int i = 0; i < letterViews.size(); i++) {
+            letterViews.get(i).setText(letterValues.get(i));
+        }
+    }
+
+    }
+
+
+

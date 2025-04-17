@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <TextView
-        android:id="@+id/D"
+        android:id="@+id/let_d"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"
@@ -88,7 +88,7 @@
         tools:layout_editor_absoluteY="311dp" />
 
     <TextView
-        android:id="@+id/B"
+        android:id="@+id/let_b"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"
@@ -105,7 +105,7 @@
         tools:layout_editor_absoluteY="311dp" />
 
     <TextView
-        android:id="@+id/I"
+        android:id="@+id/let_i"
         android:layout_width="67dp"
         android:layout_height="103dp"
         android:height="300px"
