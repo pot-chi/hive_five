@@ -1,9 +1,14 @@
 package com.example.lab2;
 
+import android.app.Dialog;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.fragment.app.FragmentActivity;
 
@@ -20,11 +25,45 @@ public class adog extends FragmentActivity {
     TextView letB, letI, letR;
     List<TextView> letterViews;
     List<String> letterValues = new ArrayList<>();
+    Button backbttn1;
+    Dialog mDialog;
+    Dialog nDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adog);
+
+        backbttn1 = findViewById(R.id.backbttn1);
+        mDialog = new Dialog(this);
+
+        backbttn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                mDialog.setContentView(R.layout.newcategpopup);
+                mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                Button confirmButton = mDialog.findViewById(R.id.ncenter);
+                Button cancelButton = mDialog.findViewById(R.id.ncexit);
+
+                confirmButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(adog.this, CategActivity.class);
+                        startActivity(intent);
+                        mDialog.dismiss();
+                    }
+                });
+
+                cancelButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mDialog.dismiss();
+                    }
+                });
+                mDialog.show();
+            }
+        });
 
         boxB = findViewById(R.id.box_b);
         boxI = findViewById(R.id.box_i);
@@ -50,8 +89,32 @@ public class adog extends FragmentActivity {
         findViewById(R.id.enterbttn1).setOnClickListener(v -> {
             if (!isCorrectSpelling()) {
                 shakeBoxes();
+                clearBoxes();
+            } else {
+                nDialog = new Dialog(this);
+                nDialog.setContentView(R.layout.goodjobpopup);
+                nDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                Button nextButton = nDialog.findViewById(R.id.gjnextbtn);
+                Button backButton = nDialog.findViewById(R.id.gjbackbtn);
+
+                nextButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(adog.this,afish.class);
+                        startActivity(intent);
+                        nDialog.dismiss();
+                    }
+                });
+
+                backButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        nDialog.dismiss();
+                    }
+                });
+                nDialog.show();
             }
-            clearBoxes();//dito ata maglagay GOODJOB!
         });
 
         findViewById(R.id.rbackbttn1).setOnClickListener(v -> backspaceLastLetter());

@@ -3,9 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
-    <uses-feature android:name="android.software.leanback" android:required="false" />
 
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -23,64 +27,63 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_afish"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".acow"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_acow"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".alion"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_alion"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".fpeach"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fpeach"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".cgreen"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cgreen"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".cred"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cred"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
+        <activity
+            android:name=".cbrown"
+            android:banner="@drawable/app_icon_your_company"
+            android:exported="true"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/title_activity_cbrown"
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".cpink"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cpink"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".cblue"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_cblue"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".START"
             android:banner="@drawable/app_icon_your_company"
@@ -88,11 +91,12 @@
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_start"
             android:logo="@drawable/app_icon_your_company">
-        <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
-        </intent-filter>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".nfive"
@@ -100,96 +104,84 @@
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_nfive"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".nfour"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_nfour"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".nthree"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_nthree"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".ntwo"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_ntwo"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".none"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_none"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".fmelon"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fmelon"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".fmango"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fmango"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".fapple"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fapple"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".fkiwi"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_fkiwi"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".abird"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_abird"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".adog"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_adog"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
         <activity
             android:name=".CategActivity"
             android:banner="@drawable/app_icon_your_company"
             android:exported="true"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/title_activity_categ"
-            android:logo="@drawable/app_icon_your_company">
-        </activity>
+            android:logo="@drawable/app_icon_your_company"/>
 
         <meta-data
             android:name="preloaded_fonts"
